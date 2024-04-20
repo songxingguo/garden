@@ -13,6 +13,9 @@ jobs:
         with:
           node-version: "20.12.1"
       - name: Initialize submodules
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_REF: "github.com/songxingguo/garden.git"
         run: |
           git submodule init
           git submodule update

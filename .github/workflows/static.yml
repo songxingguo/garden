@@ -7,18 +7,12 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
         with:
+          submodules: true,
           persist-credentials: false
       - name: Setup Node.js
         uses: actions/setup-node@master
         with:
           node-version: "20.12.1"
-      - name: Initialize submodules
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GH_REF: "github.com/songxingguo/garden.git"
-        run: |
-          git submodule init
-          git submodule update
       - name: Install and Build 🔧
         run: |
           npm ci

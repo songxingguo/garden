@@ -1,7 +1,7 @@
 name: 静态博客构建
-on: 
- repository_dispatch:
-    types: [second-brain-sync]
+on:
+  repository_dispatch:
+    types: [second_brain_sync]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest

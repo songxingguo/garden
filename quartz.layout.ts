@@ -22,17 +22,16 @@ export const defaultContentPageLayout: PageLayout = {
   ],
   left: [
     Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer()),
-    Component.DesktopOnly(Component.RecentNotes({ limit: 5 })),
   ],
   right: [
-    Component.Graph(),
-    Component.DesktopOnly(Component.TableOfContents()),
+    Component.RecentNotes({
+      limit: 3
+    }),
     Component.Backlinks(),
   ],
+  footer: Component.Graph(),
 }
 
 // components for pages that display lists of pages  (e.g. tags or folders)
@@ -40,11 +39,14 @@ export const defaultListPageLayout: PageLayout = {
   beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
   left: [
     Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer()),
-    Component.DesktopOnly(Component.RecentNotes({ limit: 5 })),
   ],
-  right: [],
+  right: [
+    Component.RecentNotes({
+      limit: 3
+    }),
+    Component.Backlinks(),
+  ],
+  footer: Component.Graph(),
 }

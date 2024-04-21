@@ -22,8 +22,11 @@ export const defaultContentPageLayout: PageLayout = {
   ],
   left: [
     Component.PageTitle(),
+    Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
+    Component.DesktopOnly(Component.Explorer()),
+    Component.DesktopOnly(Component.RecentNotes({ limit: 5 })),
   ],
   right: [
     Component.RecentNotes({
@@ -39,14 +42,11 @@ export const defaultListPageLayout: PageLayout = {
   beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
   left: [
     Component.PageTitle(),
+    Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
+    Component.DesktopOnly(Component.Explorer()),
+    Component.DesktopOnly(Component.RecentNotes({ limit: 5 })),
   ],
-  right: [
-    Component.RecentNotes({
-      limit: 3
-    }),
-    Component.Backlinks(),
-  ],
-  footer: Component.Graph(),
+  right: [],
 }

@@ -14,7 +14,7 @@ const config: QuartzConfig = {
     analytics: null,
     locale: "zh-CN",
     baseUrl: "garden.songxingguo.com",
-    ignorePatterns: ["G Attachments", "F Templete","D Unsorted", "D Excalidraw", ".obsidian", ".trash"],
+    ignorePatterns: ["F Templete", ".obsidian", ".trash"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",

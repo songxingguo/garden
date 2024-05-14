@@ -15,6 +15,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          submodules: true
+      - run: |
+          git submodule init
+          git submodule update --remote
       - uses: docker/login-action@v1
         with:
           registry: ghcr.io # 声明镜像源
@@ -22,7 +28,7 @@ jobs:
           password: ${{ secrets.GH_TOKEN }} # 需要去 https://github.com/settings/tokens 生成一个 名为 token，注意此token 需要读写 packages 等权限
       - uses: actions/setup-node@v2
         with:
-          node-version: "16.14"
+          node-version: "20.12.1"
       - uses: actions/cache@v2
         id: cache
         with:

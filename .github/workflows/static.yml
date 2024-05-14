@@ -2,7 +2,7 @@ name: 静态博客构建
 on:
   push:
     branches:
-      - "main"
+      - "main1"
   repository_dispatch:
     types: [second_brain_sync]
 jobs:

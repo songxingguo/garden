@@ -28,13 +28,10 @@ export const defaultContentPageLayout: PageLayout = {
     Component.DesktopOnly(Component.Explorer()),
   ],
   right: [
-    Component.RecentNotes({
-      limit: 3
-    }),
+    Component.Graph(),
+    Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
-    Component.DesktopOnly(Component.Graph()),
   ],
-  footer: Component.MobileOnly(Component.Graph()),
 }
 
 // components for pages that display lists of pages  (e.g. tags or folders)
@@ -46,7 +43,6 @@ export const defaultListPageLayout: PageLayout = {
     Component.Search(),
     Component.Darkmode(),
     Component.DesktopOnly(Component.Explorer()),
-    Component.DesktopOnly(Component.RecentNotes({ limit: 5 })),
   ],
   right: [],
 }

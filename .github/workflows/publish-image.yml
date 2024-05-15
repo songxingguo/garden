@@ -23,9 +23,9 @@ jobs:
           git submodule update --remote
       - uses: docker/login-action@v1
         with:
-          registry: ghcr.io # 声明镜像源
-          username: ${{ github.actor }} # 当前github 用户名
-          password: ${{ secrets.GH_TOKEN }} # 需要去 https://github.com/settings/tokens 生成一个 名为 token，注意此token 需要读写 packages 等权限
+          registry: registry.cn-shanghai.aliyuncs.com # 声明镜像源
+          username: ${{ secrets.ALIYUN_USER }} # 当前github 用户名
+          password: ${{ secrets.ALIYUN_PWD }} # 需要去 https://github.com/settings/tokens 生成一个 名为 token，注意此token 需要读写 packages 等权限
       - uses: actions/setup-node@v2
         with:
           node-version: "20.12.1"
@@ -50,9 +50,9 @@ jobs:
 
       - name: Build the  Docker image
         run:
-          | # 使用 上一步写的 Dockerfile 构建镜像并发布到私有仓库； 发布完成可以去 https://github.com/MrGaoGang?tab=packages 查看
-          docker build . --file Dockerfile --tag ghcr.io/songxingguo/garden-image:latest 
-          docker push ghcr.io/songxingguo/garden-image:latest
+          | # 使用 上一步写的 Dockerfile 构建镜像并发布到私有仓库； 发布完成可以去 https://github.com/songxingguo?tab=packages 查看
+          docker build . --file Dockerfile --tag registry.cn-shanghai.aliyuncs.com/songxingguo/garden:latest 
+          docker push registry.cn-shanghai.aliyuncs.com/songxingguo/garden:latest
       - name: 更新服务器
         uses: appleboy/ssh-action@v0.1.10
         with:

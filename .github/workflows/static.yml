@@ -4,7 +4,7 @@ on:
     branches:
       - "main1"
   repository_dispatch:
-    types: [second_brain_sync]
+    types: [second_brain_sync1]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest

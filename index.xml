@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>🌱 宋玉の数字花园</title>
+      <link>https://garden.songxingguo.com</link>
+      <description>最近的10条笔记 on 🌱 宋玉の数字花园</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>text-indent</title>
+    <link>https://garden.songxingguo.com/C-Knowledge/%E5%89%8D%E7%AB%AF/%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/HTML-and-CSS/text-indent</link>
+    <guid>https://garden.songxingguo.com/C-Knowledge/%E5%89%8D%E7%AB%AF/%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/HTML-and-CSS/text-indent</guid>
+    <description>使用方法 首行缩进。 .indent { text-indent: 2em; } 第二行缩进。 .indent { text-indent: -2em; margin-left: 2em; } 注意❗ 注：div标签不要忘记起始符。text-indent只对p或div标签有效，对br标签不生效，原因是br标签是换行标签不是分段标签。 ...</description>
+    <pubDate>Wed, 15 May 2024 05:36:26 GMT</pubDate>
+  </item><item>
+    <title>富文本显示（承诺书）</title>
+    <link>https://garden.songxingguo.com/C-Knowledge/%E5%89%8D%E7%AB%AF/%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/HTML-and-CSS/%E5%AF%8C%E6%96%87%E6%9C%AC%E6%98%BE%E7%A4%BA%EF%BC%88%E6%89%BF%E8%AF%BA%E4%B9%A6%EF%BC%89</link>
+    <guid>https://garden.songxingguo.com/C-Knowledge/%E5%89%8D%E7%AB%AF/%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/HTML-and-CSS/%E5%AF%8C%E6%96%87%E6%9C%AC%E6%98%BE%E7%A4%BA%EF%BC%88%E6%89%BF%E8%AF%BA%E4%B9%A6%EF%BC%89</guid>
+    <description>&lt;div class=&quot;fullTextContent&quot;&gt; &lt;p v-html=&quot;lawFullText&quot;&gt;&lt;/p&gt; &lt;/div&gt;; .fullTextContent { line-height: 1.7; } :deep(.indent) ...</description>
+    <pubDate>Wed, 15 May 2024 05:36:26 GMT</pubDate>
+  </item><item>
+    <title>@私有项目如何使用 github action 打包 docker 镜像并部署到服务器 - 掘金</title>
+    <link>https://garden.songxingguo.com/Web-Clip/@%E7%A7%81%E6%9C%89%E9%A1%B9%E7%9B%AE%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-github-action-%E6%89%93%E5%8C%85-docker-%E9%95%9C%E5%83%8F%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8---%E6%8E%98%E9%87%91</link>
+    <guid>https://garden.songxingguo.com/Web-Clip/@%E7%A7%81%E6%9C%89%E9%A1%B9%E7%9B%AE%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-github-action-%E6%89%93%E5%8C%85-docker-%E9%95%9C%E5%83%8F%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8---%E6%8E%98%E9%87%91</guid>
+    <description>由于 hub.docker.io 目前只支持一个 私有镜像，所以我们暂不考虑使用；推荐大家使用 github 自带的 镜像源 ghcr.io 前置准备工作 去 github.com/settings/to… 生成一个 token，注意此 token 需要读写 packages 等权限 详情请见这里 准备好你的要部署的服务器的 账号 和密码（当前页可以使用秘钥登录，这里暂且使用密码） ...</description>
+    <pubDate>Wed, 15 May 2024 05:36:26 GMT</pubDate>
+  </item><item>
+    <title>Github Action</title>
+    <link>https://garden.songxingguo.com/C-Knowledge/%E5%89%8D%E7%AB%AF/%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/Git/Github-Action</link>
+    <guid>https://garden.songxingguo.com/C-Knowledge/%E5%89%8D%E7%AB%AF/%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/Git/Github-Action</guid>
+    <description>使用方法 触发条件 提示💡 参数说明 repository_dispatch 若想要触发 GitHub 外部发生的活动的工作流，可以使用 GitHub API 触发名为 repository_dispatch 的 Webhook 事件。 请求地址格式为：/repos/{owner}/{repo}/dispatches 。 const ...</description>
+    <pubDate>Wed, 15 May 2024 05:36:26 GMT</pubDate>
+  </item><item>
+    <title>curl</title>
+    <link>https://garden.songxingguo.com/Web-Clip/curl</link>
+    <guid>https://garden.songxingguo.com/Web-Clip/curl</guid>
+    <description> @Curl 的用法指南 - 阮一峰的网络日志 .</description>
+    <pubDate>Wed, 15 May 2024 05:36:26 GMT</pubDate>
+  </item><item>
+    <title>子网掩码：IP地址是不是在同一个子网络</title>
+    <link>https://garden.songxingguo.com/Web-Clip/%E5%AD%90%E7%BD%91%E6%8E%A9%E7%A0%81%EF%BC%9AIP%E5%9C%B0%E5%9D%80%E6%98%AF%E4%B8%8D%E6%98%AF%E5%9C%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E5%AD%90%E7%BD%91%E7%BB%9C</link>
+    <guid>https://garden.songxingguo.com/Web-Clip/%E5%AD%90%E7%BD%91%E6%8E%A9%E7%A0%81%EF%BC%9AIP%E5%9C%B0%E5%9D%80%E6%98%AF%E4%B8%8D%E6%98%AF%E5%9C%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E5%AD%90%E7%BD%91%E7%BB%9C</guid>
+    <description>已知子网掩码是255.255.255.0，本机用它对自己的IP地址192.168.1.100，做一个二进制的AND运算（两个数位都为1，结果为1，否则为0），计算结果为192.168.1.0；然后对Google的IP地址172.194.72.105也做一个AND运算，计算结果为172.194.72.0。这两个结果不相等，所以结论是，Google与本机不在同一个子网络。 ...</description>
+    <pubDate>Wed, 15 May 2024 05:36:26 GMT</pubDate>
+  </item><item>
+    <title>范畴</title>
+    <link>https://garden.songxingguo.com/Web-Clip/%E8%8C%83%E7%95%B4</link>
+    <guid>https://garden.songxingguo.com/Web-Clip/%E8%8C%83%E7%95%B4</guid>
+    <description>“范畴就是使用箭头连接的物体。“（In mathematics, a category is an algebraic structure that comprises “objects” that are linked by “arrows”. ）.</description>
+    <pubDate>Wed, 15 May 2024 05:36:26 GMT</pubDate>
+  </item><item>
+    <title>首页</title>
+    <link>https://garden.songxingguo.com/</link>
+    <guid>https://garden.songxingguo.com/</guid>
+    <description>hello 👋，我是宋兴国 ❄️，一名前端开发工程师。 这里是一座「全开放式，每日更新」的数字花园，由原子化的 卡片笔记 编织而成。目前主要在浇灌这几个领域 ⭕： B 项目🧵 C 科学 🔬 D 文化🐲 E 艺术 🎨 F 时光日志📔 这绝不是传统的博客，这是我思考过程的容器，所以可能有很多看起来令人费解的半成品内容，也会颠覆你传统的长文阅读习惯。当您漫步花园时，这里有 ...</description>
+    <pubDate>Wed, 15 May 2024 05:36:26 GMT</pubDate>
+  </item><item>
+    <title>@2024 抖音欢笑中国年(四)：渲染技术实践与探索</title>
+    <link>https://garden.songxingguo.com/Web-Clip/@2024-%E6%8A%96%E9%9F%B3%E6%AC%A2%E7%AC%91%E4%B8%AD%E5%9B%BD%E5%B9%B4(%E5%9B%9B)%EF%BC%9A%E6%B8%B2%E6%9F%93%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5%E4%B8%8E%E6%8E%A2%E7%B4%A2</link>
+    <guid>https://garden.songxingguo.com/Web-Clip/@2024-%E6%8A%96%E9%9F%B3%E6%AC%A2%E7%AC%91%E4%B8%AD%E5%9B%BD%E5%B9%B4(%E5%9B%9B)%EF%BC%9A%E6%B8%B2%E6%9F%93%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5%E4%B8%8E%E6%8E%A2%E7%B4%A2</guid>
+    <description></description>
+    <pubDate>Wed, 15 May 2024 05:36:25 GMT</pubDate>
+  </item><item>
+    <title>@8秋API接口设计风格与11种API协议</title>
+    <link>https://garden.songxingguo.com/Web-Clip/@8%E7%A7%8BAPI%E6%8E%A5%E5%8F%A3%E8%AE%BE%E8%AE%A1%E9%A3%8E%E6%A0%BC%E4%B8%8E11%E7%A7%8DAPI%E5%8D%8F%E8%AE%AE</link>
+    <guid>https://garden.songxingguo.com/Web-Clip/@8%E7%A7%8BAPI%E6%8E%A5%E5%8F%A3%E8%AE%BE%E8%AE%A1%E9%A3%8E%E6%A0%BC%E4%B8%8E11%E7%A7%8DAPI%E5%8D%8F%E8%AE%AE</guid>
+    <description>API 架构 WebSocket 教程 如何调试Webhooks API 协议 授权方式 OAuth2.0 加密方式 什么是HTTP！ HTTP 和 HTTPS 的区别！ .</description>
+    <pubDate>Wed, 15 May 2024 05:36:25 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>

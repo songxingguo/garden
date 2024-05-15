@@ -62,7 +62,6 @@ jobs:
           port: ${{ secrets.SERVER_PORT }} # 服务器端口，默认22；需要去仓库的 settings/secrets/actions 去创建
           script: | # 重启更新镜像
             docker stop garden-image
-            docker rm garden-image 
-            docker login -u songxingguo -p https://github.com/songxingguo token https://ghcr.io 
-            docker pull ghcr.io/songxingguo/garden-image:latest 
-            docker run -dp 8080:8080  --restart=always --name garden-image ghcr.io/songxingguo/garden-image
+            docker rm garden-image
+            docker pull registry.cn-shanghai.aliyuncs.com/songxingguo/garden:latest
+            docker run -dp 8080:8080  --restart=always --name registry.cn-shanghai.aliyuncs.com/songxingguo/garden:latest

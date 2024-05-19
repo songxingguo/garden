@@ -7,8 +7,8 @@ on:
       - ".gitignore"
       - "README.md"
       - ".vscode/**"
-  pull_request:
-    branches: ["main"]
+  repository_dispatch:
+    types: [second_brain_sync]
 
 jobs:
   build:

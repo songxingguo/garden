@@ -1,0 +1,4 @@
+[submodule "content"]
+	path = content
+	url = https://github.com/songxingguo/second-brain.git
+  branch = main

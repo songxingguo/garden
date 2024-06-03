@@ -1,6 +1,8 @@
 @use "./variables.scss" as *;
 @use "./syntax.scss";
 @use "./callouts.scss";
+@use "./pretty-feed-v3.scss";
+@use "./heti.min.scss";
 
 html {
   scroll-behavior: smooth;
@@ -17,6 +19,31 @@ section {
   background-color: var(--light);
   font-family: var(--bodyFont);
   color: var(--darkgray);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #363636;
+  background-color: #fff;
+  font-family:
+    Source Sans Pro,
+    Roboto,
+    Helvetica,
+    Helvetica Neue,
+    Source Han Sans SC,
+    Source Han Sans TC,
+    PingFang SC,
+    PingFang HK,
+    PingFang TC,
+    sans-serif;
+  line-height: normal;
+  text-align: left;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.04);
+  min-height: 100vh;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+  background-size: 7px 7px;
 }
 
 .text-highlight {

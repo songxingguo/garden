@@ -8,6 +8,7 @@ import { visit } from "unist-util-visit"
 import { Root, Element, ElementContent } from "hast"
 import { GlobalConfiguration } from "../cfg"
 import { i18n } from "../i18n"
+import RecentNotes from "./RecentNotes"
 
 interface RenderComponents {
   head: QuartzComponent
@@ -235,7 +236,7 @@ export function renderPage(
             </div>
             {RightComponent}
           </Body>
-          <Footer {...componentData} />
+          {/* <Footer {...componentData} /> */}
         </div>
       </body>
       {pageResources.js

@@ -229,8 +229,8 @@ export function renderPage(
         <div id="quartz-root" class="page">
           <Body {...componentData}>
             {LeftComponent}
-            {StickyComponent}
             <div class="center">
+              {StickyComponent}
               <div class="page-header">
                 <Header {...componentData}>
                   {header.map((HeaderComponent) => (

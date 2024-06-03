@@ -228,6 +228,7 @@ a {
 
   & .center,
   & footer {
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     width: $pageWidth;
@@ -238,7 +239,17 @@ a {
     }
   }
 
-  &.sticky {
+  & .sticky {
+    position: absolute;
+    top: $topSpacing;
+    right: 10px;
+    @media all and (max-width: $fullPageWidth) {
+      position: initial;
+      padding: 0;
+      margin: 2em auto 0;
+      display: flex;
+      justify-content: center;
+    }
   }
 }
 

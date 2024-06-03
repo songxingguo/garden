@@ -18,6 +18,7 @@ interface RenderComponents {
   left: QuartzComponent[]
   right: QuartzComponent[]
   footer: QuartzComponent
+  sticky: QuartzComponent[]
 }
 
 const headerRegex = new RegExp(/h[1-6]/)
@@ -191,6 +192,7 @@ export function renderPage(
     left,
     right,
     footer: Footer,
+    sticky,
   } = components
   const Header = HeaderConstructor()
   const Body = BodyConstructor()
@@ -211,6 +213,14 @@ export function renderPage(
     </div>
   )
 
+  const StickyComponent = (
+    <div class="sticky">
+      {sticky.map((BodyComponent) => (
+        <BodyComponent {...componentData} />
+      ))}
+    </div>
+  )
+
   const lang = componentData.fileData.frontmatter?.lang ?? cfg.locale?.split("-")[0] ?? "en"
   const doc = (
     <html lang={lang}>
@@ -219,6 +229,7 @@ export function renderPage(
         <div id="quartz-root" class="page">
           <Body {...componentData}>
             {LeftComponent}
+            {StickyComponent}
             <div class="center">
               <div class="page-header">
                 <Header {...componentData}>

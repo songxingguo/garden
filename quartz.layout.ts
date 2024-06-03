@@ -19,7 +19,6 @@ export const defaultContentPageLayout: PageLayout = {
     // Component.ArticleTitle(),
     // Component.ContentMeta(),
     // Component.TagList(),
-    Component.Nav(),
   ],
   left: [
     // Component.PageTitle(),
@@ -34,6 +33,7 @@ export const defaultContentPageLayout: PageLayout = {
     // Component.DesktopOnly(Component.TableOfContents()),
     // Component.Backlinks(),
   ],
+  sticky: [Component.Nav()],
 }
 
 // components for pages that display lists of pages  (e.g. tags or folders)
@@ -48,4 +48,5 @@ export const defaultListPageLayout: PageLayout = {
     Component.DesktopOnly(Component.RecentNotes({ limit: 5, showTags: false })),
   ],
   right: [],
+  sticky: [],
 }

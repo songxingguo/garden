@@ -14,7 +14,7 @@ const config: QuartzConfig = {
     analytics: null,
     locale: "zh-CN",
     baseUrl: "garden.songxingguo.com",
-    ignorePatterns: ["F Templete", ".obsidian", ".trash", "G Attachments"],
+    ignorePatterns: ["F Templete", ".obsidian", ".trash", "G Attachments", "E Diary"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
@@ -70,7 +70,7 @@ const config: QuartzConfig = {
     ],
     filters: [
       // Plugin.RemoveDrafts(),
-      Plugin.ExplicitPublish()
+      Plugin.ExplicitPublish(),
     ],
     emitters: [
       Plugin.AliasRedirects(),

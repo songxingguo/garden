@@ -21,7 +21,7 @@ export const defaultContentPageLayout: PageLayout = {
     // Component.TagList(),
   ],
   left: [
-    // Component.PageTitle(),
+    Component.PageTitle(),
     // Component.MobileOnly(Component.Spacer()),
     // Component.Search(),
     // Component.Darkmode(),
@@ -33,7 +33,7 @@ export const defaultContentPageLayout: PageLayout = {
     // Component.DesktopOnly(Component.TableOfContents()),
     // Component.Backlinks(),
   ],
-  sticky: [Component.Nav()],
+  sticky: [Component.NavList(), Component.RecentNotes({ limit: 5, showTags: false })],
 }
 
 // components for pages that display lists of pages  (e.g. tags or folders)

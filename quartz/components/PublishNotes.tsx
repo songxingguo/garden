@@ -27,7 +27,7 @@ const defaultOptions = (cfg: GlobalConfiguration): Options => ({
 })
 
 export default ((userOpts?: Partial<Options>) => {
-  const RecentNotes: QuartzComponent = ({
+  const PublishNotes: QuartzComponent = ({
     allFiles,
     fileData,
     tree,
@@ -39,8 +39,8 @@ export default ((userOpts?: Partial<Options>) => {
     const remaining = Math.max(0, pages.length - opts.limit)
     console.log("fileData", fileData)
     return (
-      <div class={classNames(displayClass, "recent-notes")}>
-        {/* <h3>{opts.title ?? i18n(cfg.locale).components.recentNotes.title}</h3> */}
+      <div class={classNames(displayClass, "publish-notes")}>
+        {/* <h3>{opts.title ?? i18n(cfg.locale).components.PublishNotes.title}</h3> */}
         <ul class="recent-ul">
           {pages.slice(0, opts.limit).map((page) => {
             const title = page.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title
@@ -81,7 +81,6 @@ export default ((userOpts?: Partial<Options>) => {
       </div>
     )
   }
-  RecentNotes.afterDOMLoaded = `console.log("content", content)`
-  RecentNotes.css = style
-  return RecentNotes
+  PublishNotes.css = style
+  return PublishNotes
 }) satisfies QuartzComponentConstructor

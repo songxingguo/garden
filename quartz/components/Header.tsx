@@ -11,6 +11,7 @@ header {
   align-items: center;
   margin: 2rem 0;
   gap: 1.5rem;
+  background-color:red;
 }
 
 header h1 {

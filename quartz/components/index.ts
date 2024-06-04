@@ -20,7 +20,7 @@ import MobileOnly from "./MobileOnly"
 import RecentNotes from "./RecentNotes"
 import Breadcrumbs from "./Breadcrumbs"
 import PublishNotes from "./PublishNotes"
-import Nav from "./Nav"
+import NavList from "./NavList"
 
 export {
   ArticleTitle,
@@ -45,5 +45,5 @@ export {
   NotFound,
   Breadcrumbs,
   PublishNotes,
-  Nav,
+  NavList,
 }

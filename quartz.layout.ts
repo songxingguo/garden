@@ -33,7 +33,7 @@ export const defaultContentPageLayout: PageLayout = {
     // Component.DesktopOnly(Component.TableOfContents()),
     // Component.Backlinks(),
   ],
-  sticky: [Component.NavList(), Component.RecentNotes({ limit: 5, showTags: false })],
+  sticky: [Component.NavList(), Component.RecentNotes({ limit: 3, showTags: false })],
 }
 
 // components for pages that display lists of pages  (e.g. tags or folders)
@@ -45,7 +45,7 @@ export const defaultListPageLayout: PageLayout = {
     Component.Search(),
     Component.Darkmode(),
     Component.DesktopOnly(Component.Explorer()),
-    Component.DesktopOnly(Component.RecentNotes({ limit: 5, showTags: false })),
+    Component.DesktopOnly(Component.RecentNotes({ limit: 3, showTags: false })),
   ],
   right: [],
   sticky: [],

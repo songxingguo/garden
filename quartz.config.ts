@@ -22,6 +22,8 @@ const config: QuartzConfig = {
       "E Diary",
       "D Unsorted",
       "node_modules",
+      "Posts",
+      "B-Forge",
     ],
     defaultDateType: "modified",
     theme: {

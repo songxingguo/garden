@@ -8,7 +8,7 @@ on:
       - "README.md"
       - ".vscode/**"
   repository_dispatch:
-    types: [second_brain_sync]
+    types: [second_brain_sync1]
 
 jobs:
   build:
